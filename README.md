@@ -10,6 +10,7 @@ This is a project for the iPSY Quotes application. The application shows quotes 
 
 # Project Set up Instructions
 ## Live link
+https://ipsyjayt.github.io/ipsy-Quotes/
 
 ## Development server
 
