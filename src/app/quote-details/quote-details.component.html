@@ -1,0 +1,7 @@
+
+<p>Quote by {{quote.quoteAuthor}}</p>
+<p>Posted by {{quote.quotePublisher}}</p> 
+<p> Posted {{quote.quoteAge|timePassed}} ago.</p>
+<button class="btn btn-upvote" (click)='upvote()'>Upvote {{likes}} </button>
+<button class="btn btn-downvote" (click)='downvote()'>Downvote {{dislikes}} </button>
+<button class="btn btn-danger" (click)= 'removeQuote(true)'>Delete</button>

@@ -1,0 +1,14 @@
+p{
+    padding: 1%;
+}
+.btn-upvote{
+    color:white;
+    background-color:green;
+}
+.btn-downvote{
+    color: white;
+    background-color: #FFBF00;
+}
+.btn{
+    margin: 5px;
+}

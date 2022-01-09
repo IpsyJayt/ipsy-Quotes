@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <h5 class="text-center">Add your favorite quote</h5>
+    <hr>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'> 
+        <div class="form-group">
+            <label for="quotePublisher">NAME</label>
+            <input type="text" class="form-control" id="quotePublisher" placeholder="Enter your name" [(ngModel)]="newQuote.quotePublisher" name='quotePublisher' #quotePublisher='ngModel' required>
+            <div [hidden]='quotePublisher.valid || quotePublisher.pristine' class="alert alert-danger">
+                <p>Your name is required</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="theQuote">QUOTE</label>
+            <textarea class="form-control" id="theQuote" rows="3" placeholder="Type your favorite quote..." [(ngModel)]='newQuote.theQuote' name="theQuote" #theQuote='ngModel' required></textarea>
+            <div [hidden]='theQuote.valid || theQuote.pristine' class="alert alert-danger">
+                <p>Your quote is required</p>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="quoteAuthor">QUOTE AUTHOR</label>
+            <input type="text" class="form-control" id="quoteAuthor" placeholder="Enter quote author's name" [(ngModel)]='newQuote.quoteAuthor' name='quoteAuthor' #quoteAuthor='ngModel' required>
+            <div [hidden]='quoteAuthor.valid || quoteAuthor.pristine' class="alert alert-danger">
+                <p>Please enter the Author of your quote </p>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">Add Quote</button>
+    </form>
+</div>
